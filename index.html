@@ -1,2 +1,301 @@
 <h1>hello world</h1>
 <h2>the page has been modified</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal BuildCon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:#0d1b2a;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.btn{
+    padding:14px 35px;
+    background:#f4b400;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+section{
+    padding:70px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:10px;
+}
+
+.contact{
+    background:#0d1b2a;
+    color:white;
+}
+
+form{
+    display:grid;
+    gap:15px;
+}
+
+input,textarea{
+    padding:15px;
+    border:none;
+    border-radius:6px;
+}
+
+button{
+    background:#f4b400;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:6px;
+    font-size:17px;
+    cursor:pointer;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Royal BuildCon</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Building Your Dream Spaces</h1>
+
+<p>Construction • Interior Design • Renovation • Turnkey Projects</p>
+
+<a href="#contact" class="btn">Get Free Quote</a>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🏠 Home Construction</h3>
+<p>Complete residential construction from planning to handover.</p>
+</div>
+
+<div class="card">
+<h3>🏢 Commercial Projects</h3>
+<p>Offices, shops, buildings and industrial construction solutions.</p>
+</div>
+
+<div class="card">
+<h3>🎨 Interior Design</h3>
+<p>Modern interiors for homes, offices and commercial spaces.</p>
+</div>
+
+<div class="card">
+<h3>🔨 Renovation</h3>
+<p>Transform your old property into a modern masterpiece.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="about">
+
+<div>
+
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80">
+
+</div>
+
+<div>
+
+<h2>About Royal BuildCon</h2>
+
+<br>
+
+<p>
+
+Royal BuildCon is committed to delivering premium construction and interior solutions with superior quality, innovative designs, and timely project completion.
+
+</p>
+
+<br>
+
+<p>
+
+We specialize in residential, commercial, renovation, and turnkey projects with a focus on customer satisfaction.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<input type="text" placeholder="Phone Number">
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button>Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+© 2026 Royal BuildCon. All Rights Reserved.
+
+</footer>
+
+</body>
+
+</html>
